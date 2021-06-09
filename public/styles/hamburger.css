@@ -8,26 +8,40 @@
     display: none;
 }
 
-.mobil-menu{
+nav#sidebar{
     background: #000;
     color: var(--White);
     width: 100%;
     height: 70%;
-    /* text-transform: uppercase; */
-    line-height: 5rem;
+    text-transform: uppercase;
+    line-height: 5.5rem;
     font-size: 3.5rem;
     margin-left: 2.5%;
     position: absolute;
-    left: 0;
     top: 0;
+    right:-380px;
+    transition: .4s;
 }
-.mobil-menu div{
-    margin: 10% 2% 20%;
+nav#sidebar.active{
+    right: 0;
+}
+#sidebar.closed{
+    position: absolute;
+    top: 0;
+    right:-380px;
+    transition: .4s;
+}
+#sidebar div ul{
+    margin: 7.5% 12% 20%;
     display: flex;
     justify-content: space-between;
+    justify-content: space-between;
     font-family: 'Josefin Sans', sans-serif;
-    
 }
-.mobil-menu_entete h1{
+
+#sidebar ul{
+    margin-left: 7%;
+}
+.sidebar_entete h1{
     font-size: 2rem;
 }
