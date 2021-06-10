@@ -7,5 +7,5 @@ btnHamburger.addEventListener('click', ()=>{
     document.getElementById("sidebar").classList.toggle("active");
 })
 btnClosed.addEventListener('click', ()=>{
-    document.getElementById('sidebar').classList.toggle("closed");
+    document.getElementById('sidebar').classList.toggle("active");
 })

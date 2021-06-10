@@ -25,12 +25,7 @@ nav#sidebar{
 nav#sidebar.active{
     right: 0;
 }
-#sidebar.closed{
-    position: absolute;
-    top: 0;
-    right:-380px;
-    transition: .4s;
-}
+
 #sidebar div ul{
     margin: 7.5% 12% 20%;
     display: flex;
