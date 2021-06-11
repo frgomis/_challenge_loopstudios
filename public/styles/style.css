@@ -27,9 +27,13 @@ img{
     height:auto;
 }
 h1{
+    font-size: 2rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-weight: bold;
     color: var(--White);
+}
+h3{
+    font-size: 2.8rem;
 }
 :root {
     --borderHelp: solid 3px chartreuse;
@@ -47,7 +51,7 @@ h1{
     margin: 0 auto;
     padding: 3%;
 }
-/* xxxxxxx  HEADER ++ HEADER xxxxxxx */
+/* ===== HEADER ++ HEADER =====*/
 header{
     background-image: url('../images/mobile/image-hero.jpg');
     background-size: cover;
@@ -59,84 +63,109 @@ div.logo_menu{
     display: flex;
     justify-content: space-between;
 }
-header h2{
+.menuBurger span{
+    width: 45px;
+    height: 4px;
+    background-color: var(--White);
+    border-radius: 1.2rem;
+    display: block;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.title{
     border: var(--White) solid 1px;
     color: var(--White);
-    font-size: 5vh;
-    font-weight: 100;
+    font-size: 8.2vw;
     width: 90vw;
-    height: 25vh;
+    height: 20vh;
+    line-height: 4vh;
     margin: 0 auto;
     padding: 3%;
     text-transform: uppercase;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* xxxxxxx  MAIN - MAIN xxxxxxx */
+/* ===== MAIN - MAIN ===== */
 main h2{
     text-align: center;
     font-size: 3.8vh;
     font-weight: 100;
     text-transform: uppercase;
 }
-/* --- section virtualReality--- */
-.virtualReality{
+/* --- section about--- */
+.about{
     margin: 15% 7.5%;
 }
 .imageInteractive{
     margin: 15% 0;
 }
-.virtualReality p{
+.about p{
     margin: 10% 0 20%;
     text-align: center;
     line-height:2.75rem;
 }
 /* --- section galery--- */ 
-article div{
+.galery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+article>div{
     /* border: red solid 3px; */
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     margin: 5% 0;
     color: var(--White);
     font-size: 3.2vh;
-    font-weight: 100;
     text-transform: uppercase;
-}
-.picture1{
-    background-image: url('../images/mobile/image-deep-earth.jpg');
-  
-    display: flex;
  
 }
-/* .picture1{
+.picture{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ h3{
+   position: absolute;
+   bottom: 7.5%;
+   left: 7%;
+}
+
+.picture:first-of-type{
     background-image: url('../images/mobile/image-deep-earth.jpg');
 }
-.picture2{
+.picture:nth-child(2){
     background-image: url('../images/mobile/image-night-arcade.jpg');
 }
-.picture3{
+.picture:nth-child(3){
     background-image: url('../images/mobile/image-soccer-team.jpg');
 }
-.picture4{
+.picture:nth-child(4){
     background-image: url('../images/mobile/image-grid.jpg');
+    
 }
-.picture5{
+.picture:nth-child(5){
     background-image: url('../images/mobile/image-from-above.jpg');
 }
-.picture6{
+.picture:nth-child(6){
     background-image: url('../images/mobile/image-pocket-borealis.jpg');
 }
-.picture7{
+.picture:nth-child(7){
     background-image: url('../images/mobile/image-curiosity.jpg');
 }
-.picture8{
+.picture:last-child{
     background-image: url('../images/mobile/image-fisheye.jpg');
-} */
+} 
 button{
-    margin: 10%;
+    margin: 7.5% 0;
     border: var(--VeryDarkGray) solid 1px;
-    padding: 5%;
+    padding: 5% 20%;
     background-color:var(--White);
+    text-transform: uppercase;
+    text-align: center;
 }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color:hsl(325, 100%, 46%); }

@@ -8,7 +8,7 @@
     display: none;
 }
 
-nav#sidebar{
+nav#sidebarMobil{
     background: #000;
     color: var(--White);
     width: 100%;
@@ -22,11 +22,11 @@ nav#sidebar{
     right:-380px;
     transition: .4s;
 }
-nav#sidebar.active{
+nav#sidebarMobil.active{
     right: 0;
 }
 
-#sidebar div ul{
+#sidebarMobil div ul{
     margin: 7.5% 12% 20%;
     display: flex;
     justify-content: space-between;
@@ -34,9 +34,9 @@ nav#sidebar.active{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#sidebar ul{
+#sidebarMobil ul{
     margin-left: 7%;
 }
-.sidebar_entete h1{
+.sidebarMobil_entete h1{
     font-size: 2rem;
 }

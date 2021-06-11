@@ -4,8 +4,8 @@ let btnClosed = document.querySelector('.icon');
 
 console.log(btnHamburger, btnClosed);
 btnHamburger.addEventListener('click', ()=>{
-    document.getElementById("sidebar").classList.toggle("active");
-})
+    document.getElementById("sidebarMobil").classList.toggle("active");
+});
 btnClosed.addEventListener('click', ()=>{
-    document.getElementById('sidebar').classList.toggle("active");
-})
+    document.getElementById('sidebarMobil').classList.toggle("active");
+});
