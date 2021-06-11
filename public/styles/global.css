@@ -1,69 +1,81 @@
 *,
 ::before,
-::after{
+::after {
     border: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
     font-family: 'Alata', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
+
 }
-body{
+
+body {
     font-size: 1.5rem;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--White);
 }
-li{
+
+li {
     list-style: none;
 }
-img{
+
+img {
     width: 100%;
-    height:auto;
+    height: auto;
 }
-h1{
+
+h1 {
     font-size: 2rem;
     font-weight: bolder;
     text-transform: uppercase;
     color: var(--White);
 }
-h3{
+
+h3 {
     font-size: 2.8rem;
 }
+
 :root {
     --borderHelp: solid 3px chartreuse;
     --Black: hsl(0, 0%, 0%);
     --DarkGray: hsl(0, 0%, 55%);
-    --fontAlata: 'Alata', sans-serif;
-    --fontJosefin: 'Josefin Sans', sans-serif;
     --VeryDarkGray: hsl(0, 0%, 41%);
     --White: hsl(0, 0%, 100%);
+    --fontAlata: 'Alata', sans-serif;
+    --fontJosefin: 'Josefin Sans', sans-serif;
 }
-.container{
+
+.container {
     border: blue solid 3px;
     min-width: 375px;
     max-width: 768px;
     margin: 0 auto;
     padding: 3%;
 }
+
 /* ===== HEADER ++ HEADER =====*/
-header{
+header {
     background-image: url('../images/mobile/image-hero.jpg');
     background-size: cover;
-    height:700px ;
+    height: 700px;
     display: grid;
 }
-div.logo_menu{
+
+div.logo_menu {
     padding: 4% 3%;
     display: flex;
     justify-content: space-between;
 }
-.menuBurger span{
+
+.menuBurger span {
     width: 45px;
     height: 4px;
     background-color: var(--White);
@@ -72,13 +84,14 @@ div.logo_menu{
     margin-top: .5rem;
     cursor: pointer;
 }
-.title{
+
+.title {
     border: var(--White) solid 1px;
     color: var(--White);
-    font-size: 8.2vw;
-    width: 90vw;
-    height: 20vh;
-    line-height: 4vh;
+    font-size: 2.8rem;
+    width: 85vw;
+    height: 30vh;
+    line-height: 4rem;
     margin: 0 auto;
     padding: 3%;
     text-transform: uppercase;
@@ -88,84 +101,149 @@ div.logo_menu{
 }
 
 /* ===== MAIN - MAIN ===== */
-main h2{
+main h2 {
     text-align: center;
     font-size: 3.8vh;
     font-weight: 100;
     text-transform: uppercase;
 }
+
 /* --- section about--- */
-.about{
+.about {
     margin: 15% 7.5%;
 }
-.imageInteractive{
+
+.imageInteractive {
     margin: 15% 0;
 }
-.about p{
+
+.about p {
     margin: 10% 0 20%;
     text-align: center;
-    line-height:2.75rem;
+    line-height: 2.75rem;
 }
-/* --- section galery--- */ 
-.galery{
+
+/* --- section galery--- */
+.galery {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
-article>div{
+
+article>div {
     /* border: red solid 3px; */
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     margin: 5% 0;
     color: var(--White);
     font-size: 3.2vh;
     text-transform: uppercase;
- 
 }
-.picture{
+
+.picture {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
- h3{
-   position: absolute;
-   bottom: 7.5%;
-   left: 7%;
+
+h3 {
+    position: absolute;
+    bottom: 7.5%;
+    left: 2.8%;
 }
 
-.picture:first-of-type{
+.picture:first-of-type {
     background-image: url('../images/mobile/image-deep-earth.jpg');
 }
-.picture:nth-child(2){
+
+.picture:nth-child(2) {
     background-image: url('../images/mobile/image-night-arcade.jpg');
 }
-.picture:nth-child(3){
+
+.picture:nth-child(3) {
     background-image: url('../images/mobile/image-soccer-team.jpg');
 }
-.picture:nth-child(4){
+
+.picture:nth-child(4) {
     background-image: url('../images/mobile/image-grid.jpg');
-    
 }
-.picture:nth-child(5){
+
+.picture:nth-child(5) {
     background-image: url('../images/mobile/image-from-above.jpg');
 }
-.picture:nth-child(6){
+
+.picture:nth-child(6) {
     background-image: url('../images/mobile/image-pocket-borealis.jpg');
 }
-.picture:nth-child(7){
+
+.picture:nth-child(7) {
     background-image: url('../images/mobile/image-curiosity.jpg');
 }
-.picture:last-child{
+
+.picture:last-child {
     background-image: url('../images/mobile/image-fisheye.jpg');
-} 
-button{
-    margin: 7.5% 0;
+}
+
+.seeAll{
+    
+    /* padding-bottom: 10%;*/
+    text-align: center; 
+}
+
+button {
+    margin: 5% 0 20% 0;
     border: var(--VeryDarkGray) solid 1px;
     padding: 5% 20%;
-    background-color:var(--White);
+    background-color: var(--White);
     text-transform: uppercase;
     text-align: center;
 }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color:hsl(325, 100%, 46%); }
+
+/* ===== FOOTER - FOOTER ===== */
+footer {
+    background-color: #000;
+    border: var(--borderHelp);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer_logo {
+    margin: 10% auto;
+    width: 45%;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+.socialMedia {
+    margin: 10% auto;
+    display: flex;
+}
+
+.socialMedia div {
+    width: 48px;
+    margin-right: 7.5%
+}
+
+footer p {
+    text-align: center;
+    color: #acabab;
+    margin: 2.5%;
+}
+
+/* ===== ATTRIBUTION - ATTRIBUTION ===== */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(325, 100%, 46%);
+}

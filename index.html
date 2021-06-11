@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
   <title>Frontend Mentor | Loopstudios landing page</title>
-  <link rel="stylesheet" href="public/styles/style.css">
+  <link rel="stylesheet" href="public/styles/global.css">
   <link rel="stylesheet" href="public/styles/hamburger.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,25 +23,25 @@
       <!-- ----------------------------------------------- -->
       <div class="logo_menu">
 
-        <div class="logo"><a href="index.html"><h1>Loopstudios</h1></a></div>
+        <div class="logo"><a href="index.html"><img src="public/images/logo.svg" alt="loopstudios logo"></a></div>
         <div class="menuBurger">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <!-- -----nav mobile -->
+        <!-- -----nav mobile OPEN -->
         <nav id="sidebarMobil">
           <div class="sidebar_entete">
             <ul>
               <li>
-                <h1>Loopstudios</h1>
+                <img src="public/images/logo.svg" alt="loopstudios logo">
               </li>
               <li class=icon> X </li>
             </ul>
           </div>
           <!-- -------- -->
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Abou</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Products</a></li>
@@ -91,19 +91,33 @@
           <div class="picture"><h3>Make &nbspit<br>fisheye</h3></div>
         </article>
         <!-- ----- -->
-        <button>See all</button>
+        <div class="seeAll">
+          <a href="#"><button>See all</button></a>
+        </div>
+        
       </section>
       <!-- ----------------------------------------------- -->
     </main>
     <!-- ======= FOOTER -- FOOTER ======= -->
     <footer>
-      <ul>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li> Support</li>
-      </ul>
+      <div class="footer_logo">
+        <img src="public/images/logo.svg" alt="loopstudios logo">
+      </div>
+      <div class="footer_menu">
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li> Support</li>
+        </ul>
+      </div>
+      <div class="socialMedia">
+        <div><a href="#"> <img src="public/images/icon-facebook.svg" alt="facebook"></a></div>
+        <div><a href="#"><img src="public/images/icon-twitter.svg" alt="twitter"></a></div>
+        <div><a href="#"><img src="public/images/icon-pinterest.svg" alt="pinterest"></a></div>
+        <div><a href="#"><img src="public/images/icon-instagram.svg" alt="instagram"></a></div>
+      </div>
       <p>© 2021 Loopstudios. All rights reserved.</p>
     </footer>
       <!-- ======= ATTRIBUTION -- ATTRIBUTION ======= -->
