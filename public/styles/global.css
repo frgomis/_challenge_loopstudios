@@ -41,10 +41,11 @@ h1 {
 
 h3 {
     font-size: 2.8rem;
+    font-weight: normal;
 }
 
 :root {
-    --borderHelp: solid 3px chartreuse;
+    --borderHelp: solid 5px chartreuse;
     --Black: hsl(0, 0%, 0%);
     --DarkGray: hsl(0, 0%, 55%);
     --VeryDarkGray: hsl(0, 0%, 41%);
@@ -57,24 +58,42 @@ h3 {
     border: blue solid 3px;
     min-width: 375px;
     max-width: 768px;
-    margin: 0 auto;
-    padding: 3%;
 }
 
 /* ===== HEADER ++ HEADER =====*/
-header {
+header{
     background-image: url('../images/mobile/image-hero.jpg');
     background-size: cover;
     height: 700px;
     display: grid;
 }
-
-div.logo_menu {
+.active{
+    visibility: visible;
+    display: block;
+}
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+nav
+/* logo et hamburger */
+nav.logo_menu{ 
     padding: 4% 3%;
-    display: flex;
-    justify-content: space-between;
+    transition: ease .1s transform;
+}
+/* sidebar active */
+nav.logo_menu1{
+    background: #000;
+    padding: 0 3%;
+    position: absolute;
+    z-index: 10;
+    height: 700px;
+    width: 100%;
+    transition: ease .4s transform;
+
 }
 
+.menuBurger1 span,
 .menuBurger span {
     width: 45px;
     height: 4px;
@@ -85,12 +104,29 @@ div.logo_menu {
     cursor: pointer;
 }
 
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 50%;
+}
+
+.menu{
+    color: var(--White);
+    width: 100%;
+    height: 70%;
+    text-transform: uppercase;
+    line-height: 5.5rem;
+    font-size: 3.5rem;
+    margin-left: 3.5%;
+    
+}
+
 .title {
     border: var(--White) solid 1px;
     color: var(--White);
     font-size: 2.8rem;
-    width: 85vw;
-    height: 30vh;
+    width:32rem;
+    height: 20rem;
     line-height: 4rem;
     margin: 0 auto;
     padding: 3%;
@@ -100,6 +136,9 @@ div.logo_menu {
     align-items: center;
 }
 
+.title h2{
+    font-weight: 100;
+}
 /* ===== MAIN - MAIN ===== */
 main h2 {
     text-align: center;
@@ -128,6 +167,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 3%;
 }
 
 article>div {
@@ -185,8 +225,6 @@ h3 {
 }
 
 .seeAll{
-    
-    /* padding-bottom: 10%;*/
     text-align: center; 
 }
 
@@ -202,11 +240,11 @@ button {
 /* ===== FOOTER - FOOTER ===== */
 footer {
     background-color: #000;
-    border: var(--borderHelp);
     color: var(--White);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 -3%;
 }
 
 .footer_logo {
@@ -218,8 +256,8 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-    font-weight: bold;
     line-height: 5rem;
+    text-transform: uppercase;
 }
 
 .socialMedia {
@@ -237,7 +275,6 @@ footer p {
     color: #acabab;
     margin: 2.5%;
 }
-
 /* ===== ATTRIBUTION - ATTRIBUTION ===== */
 .attribution {
     font-size: 11px;
@@ -247,3 +284,73 @@ footer p {
 .attribution a {
     color: hsl(325, 100%, 46%);
 }
+
+@media screen and (min-width: 769px) {
+    .container {
+        border: orange solid 5px;
+        max-width: 992px;
+    }
+    header{
+        background-image: url('../images/desktop/image-hero.jpg');
+        transition: ease 4.ms transform;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template: 20% auto/repeat(2, 1fr);
+    }
+   
+    .logo{
+        margin: 10%;
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+    }
+    .menuBurger{
+        display: none;
+        visibility: hidden;
+    }
+    .title{
+        margin : 20% 10%;
+        font-size: 2.8rem;
+        width:52rem;
+        height: 20rem;
+        line-height: 4.5rem;
+    }
+    .desktop ul{
+        margin: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .desktop ul li{
+        margin: 3%;
+        font-size: 2rem;
+    }
+    /* ====== MAIN -- MAIN ===== */
+    main h2 {
+        text-align: center;
+        font-size: 3.8vh;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    /* --- section about--- */
+    .about {
+        margin: 0 7.5%;
+    }
+    
+    /* .imageInteractive {
+        margin: 15% 0;
+    } */
+    
+    .about p {
+        
+        text-align: center;
+        line-height: 2.75rem;
+    }
+
+
+    
+}
+
+
