@@ -1,22 +1,20 @@
 // alert("coucou")
-let btnHamburger = document.querySelector('.menuBurger');
-let logoMenu = document.querySelector('.logo_menu');
+let burger = document.querySelector('.burger');
+let menuList = document.querySelector('.menu_list');
+let menu1 = document.querySelector('.menu_list');
+let nav = document.querySelector('.navbar')
 
-let btnHamburger1 = document.querySelector('.menuBurger1');
-let menu1 = document.querySelector('.logo_menu1');
-
-
-console.log(btnHamburger);
-console.log(logoMenu);
-console.log(menu1);
-
-btnHamburger.addEventListener('click', ()=>{
-    logoMenu.classList.replace('hidden', 'visible');
-    menu1.classList.replace('hidden','visible');
-});
-btnHamburger1.addEventListener('click', ()=>{
-    logoMenu.classList.replace('hidden','visible');
-    menu1.classList.replace('hidden', 'visible');
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menuList.classList.toggle('hidden');
 });
 
+// au scroll, la div.entete devient transparente
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+        nav.classList.add('scroll');
+    } else {
+        nav.classList.remove('scroll');
+    }
 
+})
