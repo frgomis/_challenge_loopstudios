@@ -175,12 +175,12 @@ button:hover{
 /* === FOOTER ==== */
 footer{
    display: grid;
+  
    grid-template: repeat(2, auto)/repeat(2, 1fr);
 }
 .footer_logo {
     grid-area: 1/1/2/2;
-    align-self: start;
-    margin: 10% 10%;
+    margin: 10% 10% 0;
     width: 45%;
 }
 .footer_menu {
@@ -201,26 +201,42 @@ footer{
     flex-direction: row;
     margin-right: 2rem;
 }
-.socialMedia{
+.socialMedia {
     grid-area: 1/2/2/3 ;
-    margin: 10% 10%;
+    margin-top: 10%;
+    margin-left: 60% ;
+    }
+.socialMedia div{
+    width: 57px;
 }
-.attribution {
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 2.5% 0;
-    font-weight: bold;
-}
-
-.attribution a {
-    color: hsl(325, 100%, 46%);
+footer p{
+    grid-area: 2/2/3/3 ;
+    margin-left: 42% ;
 }
 
-}    
+   
+    .attribution {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 2.5% 0;
+        font-weight: bold;
+    }
+    
+    .attribution a {
+        color: hsl(325, 100%, 46%);
+    }
+
+}
 
 
 
+@media screen and (min-width: 993px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 
+}
 
 
 
