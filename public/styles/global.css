@@ -45,7 +45,7 @@ h3 {
 }
 
 :root {
-    --borderHelp: solid 3.5px chartreuse;
+    --borderHelp: solid 3.5px #eb008a;
     --Black: hsl(0, 0%, 0%);
     --DarkGray: hsl(0, 0%, 55%);
     --VeryDarkGray: hsl(0, 0%, 41%);
@@ -55,7 +55,6 @@ h3 {
 }
 
 .container {
-    border: var(--borderHelp);
     min-width: 375px;
     max-width: 768px;
 }
@@ -73,7 +72,7 @@ h3 {
 header{
     background-image: url('../images/mobile/image-hero.jpg');
     background-size: cover;
-    height: 700px;
+    height: 100vh;
     display: grid;
 }
 
@@ -146,7 +145,7 @@ ul.menu_list{
     position: absolute;
     top: 0;
     z-index: 0;
-    transition: background-color ease-in-out .4s transform;
+    transition: ease-in-out .4s transform;
     color: var(--White);
     text-transform: uppercase;
     line-height: 5.5rem;
@@ -272,7 +271,6 @@ button:hover{
     color: var(--White);
     font-weight: bold;
 }
-
 /* ===== FOOTER - FOOTER ===== */
 footer {
     background-color: #000;
@@ -322,69 +320,3 @@ footer p {
 .attribution a {
     color: hsl(325, 100%, 46%);
 }
-/* ===== TABLETTE - TABLETTE */
-@media screen and (min-width: 769px) {
-    .container {
-        border: orange solid 5px;
-        max-width: 992px;
-    }
-    header{
-        background-image: url('../images/desktop/image-hero.jpg');
-        transition: ease 4.ms transform;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: grid;
-        grid-template: 20% auto/repeat(2, 1fr);
-    }
-   
-    .entete{
-        margin: 10%;
-        display: flex;
-        justify-content: space-between;
-        padding:0;
-    }
-   
-    .title{
-        margin : 20% 10%;
-        font-size: 2.8rem;
-        width:52rem;
-        height: 20rem;
-        line-height: 4.5rem;
-    }
-    .desktop ul{
-        margin: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .desktop ul li{
-        margin: 3%;
-        font-size: 2rem;
-    }
-    /* ====== MAIN -- MAIN ===== */
-    main h2 {
-        text-align: center;
-        font-size: 3.8vh;
-        font-weight: 100;
-        text-transform: uppercase;
-    }
-    
-    /* --- section about--- */
-    .about {
-        margin: 0 7.5%;
-    }
-    
-    /* .imageInteractive {
-        margin: 15% 0;
-    } */
-    
-    .about p {
-        text-align: center;
-        line-height: 2.75rem;
-    }
-
-
-    
-}
-
-
