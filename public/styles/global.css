@@ -282,6 +282,7 @@ footer {
 }
 
 .footer_logo {
+    align-self: start;
     margin: 10% auto;
     width: 45%;
 }
