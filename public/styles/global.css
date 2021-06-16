@@ -80,7 +80,7 @@ header{
 .navbar{ 
     transition: ease .1s transform;
 }
-.navbar.scroll{
+.navbar.disparait{
     visibility: hidden;
 }
 /* === entete ===* */
@@ -150,6 +150,9 @@ ul.menu_list{
     text-transform: uppercase;
     line-height: 5.5rem;
     font-size: 3.5rem;
+}
+ul.menu_list.active{
+    display: flex;
 }
 /* === title ===* */
 .title {
@@ -312,6 +315,8 @@ footer p {
 }
 /* ===== ATTRIBUTION - ATTRIBUTION ===== */
 .attribution {
+    background-color: #000;
+    color: var(--DarkGray);
     font-size: 1.2rem;
     text-align: center;
     padding: 2.5% 0;
