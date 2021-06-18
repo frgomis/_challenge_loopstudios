@@ -1,9 +1,11 @@
 // alert("coucou")
+let nav = document.querySelector('.navbar');
 let burger = document.querySelector('.burger');
 let menuList = document.querySelector('.menu_list');
-let nav = document.querySelector('.navbar');
+let menuDesktop = document.querySelector('#desktop')
 let windowX = window.innerWidth;
 console.log(windowX);
+console.log(menuDesktop);
 
 
 burger.addEventListener('click', () => {
@@ -20,11 +22,4 @@ window.addEventListener('scroll', () => {
     }
 
 });
-// au delà de 769px, la ul.menu_list se met en display: flex 
 
-window.addEventListener('onresize', () => {
-    if (window.onresize > 769) {
-        burger.classList.toggle('hidden');
-        menuList.classList.toggle('hidden');
-    }
-});

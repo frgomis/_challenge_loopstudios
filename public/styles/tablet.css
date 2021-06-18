@@ -15,7 +15,11 @@
        
     }
     nav{
+        /* border: var(--borderHelp); */
         height: 18vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
     }
    
     .entete{
@@ -26,6 +30,21 @@
         visibility: hidden;
         display: none;
     }
+    #desktop{
+        visibility: visible;
+        display: flex;
+        grid-area: 1/2/2/-1;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        transition: ease-in-out .4s transform;
+        color: var(--White);
+        font-size:2rem; 
+        font-weight: 400;
+    }
+    ul#desktop  li{
+       margin-right: 4.5%;
+   } 
     
     .title{
         border: var(--White) solid .5px;
@@ -36,19 +55,7 @@
         height: 20rem;
         line-height: 4.5rem;
     }
-    /* .menu_list.desktop.active{
-        z-index: 100;
-        display: flex;
-        width: 100%;
-        background: none;
-        padding:0;
-        /* position: absolute;
-        top: 0; 
-        transition: ease-in-out .4s transform;
-        color: var(--White);
-        text-transform: uppercase;
-        font-size: 1.8rem;
-    } */
+  
    
     /* ====== MAIN -- MAIN ===== */
     main {

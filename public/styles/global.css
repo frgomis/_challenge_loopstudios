@@ -154,6 +154,10 @@ ul.menu_list{
 ul.menu_list.active{
     display: flex;
 }
+#desktop{
+    visibility: hidden;
+   display: none;
+}
 /* === title ===* */
 .title {
     border: var(--White) solid 1px;
