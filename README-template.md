@@ -10,9 +10,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/frgomis/_challenge_loopstudios)
+- Solution URL: (https://frgomis.github.io/_challenge_loopstudios/)
 
-## My process
 
 ### Built with
 
@@ -25,7 +24,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ## Author
 
 - Website - [FrancoiseG](https://www.francoiseg.alwaysdata.net)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [frgomis](https://www.frontendmentor.io/profile/yourusername)
 
 ## Acknowledgments
 MarieT & Wii-hub 
